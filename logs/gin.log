@@ -1,0 +1,28 @@
+2026/04/18 16:57:23 Connected to database
+2026/04/18 16:59:18 Connected to database
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /user/                    --> gin-gonic-gorm/controllers/user_controller.GetAllUser (4 handlers)
+[GIN-debug] GET    /user/paginate            --> gin-gonic-gorm/controllers/user_controller.GetUserPaginate (4 handlers)
+[GIN-debug] POST   /user/                    --> gin-gonic-gorm/controllers/user_controller.Store (4 handlers)
+[GIN-debug] GET    /user/:id                 --> gin-gonic-gorm/controllers/user_controller.GetByID (4 handlers)
+[GIN-debug] PATCH  /user/:id                 --> gin-gonic-gorm/controllers/user_controller.UpdateByID (4 handlers)
+[GIN-debug] DELETE /user/:id                 --> gin-gonic-gorm/controllers/user_controller.DeleteByID (4 handlers)
+[GIN-debug] POST   /user/login               --> gin-gonic-gorm/controllers/auth_controller.Login (4 handlers)
+[GIN-debug] GET    /book                     --> gin-gonic-gorm/controllers/book_controller.GetAllBook (4 handlers)
+[GIN-debug] POST   /file/upload_file         --> gin-gonic-gorm/controllers/file_controller.HandleUploadFile (5 handlers)
+[GIN-debug] POST   /file/middleware          --> gin-gonic-gorm/controllers/file_controller.SendStatus (6 handlers)
+[GIN-debug] DELETE /file/:filename           --> gin-gonic-gorm/controllers/file_controller.HandleRemoveFile (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8000
+[GIN-debug] redirecting request 301: /user/ --> /user/
+[GIN] 2026/04/18 - 16:59:40 | 200 |  17.95ms |       127.0.0.1 | GET      "/user/"
+[GIN-debug] redirecting request 301: /user/ --> /user/
+[GIN] 2026/04/18 - 16:59:41 | 200 |    576µs |       127.0.0.1 | GET      "/user/"
