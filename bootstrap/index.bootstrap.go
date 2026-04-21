@@ -19,7 +19,7 @@ func BoostrapApp() {
 	if err != nil {
 		log.Fatal("Error loading env file")
 	}
-	// comfig init
+	// config init
 	log_config.DefaultLogging("logs/file/app.log")
 	config.InitConfig()
 	// database init
